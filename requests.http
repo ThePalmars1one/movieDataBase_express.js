@@ -3,13 +3,13 @@ POST http://localhost:9000/api/movies HTTP/1.1
 Content-Type: application/json
 
 {
-    "mov_id": 3,
-    "mov_title": "Batman",
-    "mov_year": 2008,
-    "mov_time": 180,
+    "mov_id": 5,
+    "mov_title": "Avatar",
+    "mov_year": 2005,
+    "mov_time": 190,
     "mov_lang": "ENG",
-    "mov_dt_rel": "09-12-2008",
-    "mov_rel_country": "UK"
+    "mov_dt_rel": "09-12-2009",
+    "mov_rel_country": "USA"
 }
 
 ###

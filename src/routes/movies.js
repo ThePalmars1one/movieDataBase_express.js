@@ -4,7 +4,7 @@ const moviesSchema = require("../models/movies");
 const router = express.Router();
 
 router.post("/movies", (req,res) => {
-    const movie= moviesSchema(req.body);
+    const movie = moviesSchema(req.body);
     movie.save().then((data) => res.json(data)).catch((error) => res.json({message: error}))
 })
 
