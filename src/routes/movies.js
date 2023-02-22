@@ -5,7 +5,7 @@ const router = express.Router();
 
 //Create a movie
 router.post("/movies", (req,res) => {
-    const movie= moviesSchema(req.body);
+    const movie = moviesSchema(req.body);
     movie.save().then((data) => res.json(data)).catch((error) => res.json({message: error}))
 })
 
