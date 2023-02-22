@@ -1,0 +1,11 @@
+###
+POST http://localhost:9000/api/genres HTTP/1.1
+Content-Type: application/json
+
+{
+    "gen_id": 2,
+    "gen_title": "Terror"
+}
+
+###
+GET http://localhost:9000/api/genres HTTP/1.1
