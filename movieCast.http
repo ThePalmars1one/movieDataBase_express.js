@@ -3,10 +3,26 @@ POST http://localhost:9000/api/moviecast HTTP/1.1
 Content-Type: application/json
 
 {
-    "act_id": 10,
-    "mov_id": 25,
-    "role": "Michael Jordan"
+    "act_id": 20,
+    "mov_id": 55,
+    "role": "Jordaaaaan"
 }
 
 ###
 GET http://localhost:9000/api/moviecast HTTP/1.1
+
+###
+GET http://localhost:9000/api/moviecast/35 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/moviecast/35 HTTP/1.1
+Content-Type: application/json
+
+{
+    "act_id": 20,
+    "mov_id": 35,
+    "role": "Jordan Segundo"
+}
+
+###
+DELETE http://localhost:9000/api/moviecast/55 HTTP/1.1

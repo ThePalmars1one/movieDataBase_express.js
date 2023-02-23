@@ -3,11 +3,13 @@ const mongoose = require("mongoose");
 const movieDirectionSchema = mongoose.Schema({
     dir_id: {
         type: Number,
-        required: true
+        required: true,
+        ref: "Director"
     },
     mov_id: {
         type: Number,
-        required: true
+        required: true,
+        ref: "Movies"
     }
 })
 

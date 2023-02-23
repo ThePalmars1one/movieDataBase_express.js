@@ -3,11 +3,13 @@ const mongoose = require("mongoose");
 const movieCastSchema = mongoose.Schema({
     act_id: {
         type: Number,
-        required: true
+        required: true,
+        ref: "Actor"
     },
     mov_id: {
         type: Number,
-        required: true
+        required: true,
+        ref: "Movies"
     },
     role: {
         type: String,

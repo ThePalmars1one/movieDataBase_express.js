@@ -3,10 +3,24 @@ POST http://localhost:9000/api/moviedirection HTTP/1.1
 Content-Type: application/json
 
 {
-    "dir_id": 10,
-    "mov_id": 5
+    "dir_id": 70,
+    "mov_id": 35
 }
 
 ###
 GET http://localhost:9000/api/moviedirection HTTP/1.1
 
+###
+GET http://localhost:9000/api/moviedirection/50 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/moviedirection/70 HTTP/1.1
+Content-Type: application/json
+
+{
+    "dir_id": 70,
+    "mov_id": 100
+}
+
+###
+DELETE http://localhost:9000/api/moviedirection/70 HTTP/1.1
