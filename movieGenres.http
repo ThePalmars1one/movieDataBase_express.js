@@ -1,0 +1,23 @@
+###
+POST http://localhost:9000/api/moviegenres HTTP/1.1
+Content-Type: application/json
+
+{
+    "gen_id": 3,
+    "mov_id": 4
+}
+
+###
+GET http://localhost:9000/api/moviegenres HTTP/1.1
+
+###
+DELETE http://localhost:9000/api/moviegenres/3 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/moviegenres/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "gen_id": 2,
+    "mov_id": "3"
+}
