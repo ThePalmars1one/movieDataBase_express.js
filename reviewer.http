@@ -1,0 +1,23 @@
+###
+POST http://localhost:9000/api/reviewers HTTP/1.1
+Content-Type: application/json
+
+{
+    "rev_id": 3,
+    "rev_name": "Camilo Paladines"
+}
+
+###
+GET http://localhost:9000/api/reviewers HTTP/1.1
+
+###
+DELETE http://localhost:9000/api/reviewers/3 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/reviewers/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "rev_id": 2,
+    "rev_name": "Jose M Gonzalez"
+}

@@ -7,6 +7,9 @@ const movieCastRoutes = require("./routes/movieCast")
 const directorRoutes = require("./routes/director")
 const movieDirectionRoutes = require("./routes/movieDirection")
 const genresRoutes = require("./routes/genres")
+const movieGenresRoutes = require("./routes/movieGenres")
+const reviewerRoutes = require("./routes/reviewer")
+const ratingRoutes = require("./routes/rating")
 
 const app = express();
 const port = process.env.PORT || 9000;
@@ -19,6 +22,9 @@ app.use("/api", movieCastRoutes);
 app.use("/api", directorRoutes);
 app.use("/api", movieDirectionRoutes);
 app.use("/api", genresRoutes);
+app.use("/api", movieGenresRoutes);
+app.use("/api", reviewerRoutes);
+app.use("/api", ratingRoutes);
 
 // routes
 app.listen(port, () => console.log("Server listening on port", port));

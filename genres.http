@@ -3,9 +3,21 @@ POST http://localhost:9000/api/genres HTTP/1.1
 Content-Type: application/json
 
 {
-    "gen_id": 2,
-    "gen_title": "Terror"
+    "gen_id": 3,
+    "gen_title": "Ciencia Ficcion"
 }
 
 ###
 GET http://localhost:9000/api/genres HTTP/1.1
+
+###
+DELETE http://localhost:9000/api/genres/3 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/genres/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "gen_id": 2,
+    "gen_title": "Comedia"
+}
