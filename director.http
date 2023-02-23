@@ -3,10 +3,26 @@ POST http://localhost:9000/api/director HTTP/1.1
 Content-Type: application/json
 
 {
-    "dir_id": 10,
-    "dir_fname": "Martin",
-    "dir_lname": "Rodriguez"
+    "dir_id": 6,
+    "dir_fname": "James",
+    "dir_lname": "Gun"
 }
 
 ###
 GET http://localhost:9000/api/director HTTP/1.1
+
+###
+GET http://localhost:9000/api/director/5 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/director/6 HTTP/1.1
+Content-Type: application/json
+
+{
+    "dir_id": 6,
+    "dir_fname": "James",
+    "dir_lname": "Gun Gun"
+}
+
+###
+DELETE http://localhost:9000/api/director/6 HTTP/1.1

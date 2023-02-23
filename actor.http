@@ -3,11 +3,29 @@ POST http://localhost:9000/api/actor HTTP/1.1
 Content-Type: application/json
 
 {
-    "act_id": 15,
-    "act_fname": "Juan",
-    "act_lname": "Rodriguez",
+    "act_id": 11,
+    "act_fname": "peppito",
+    "act_lname": "sanchez",
     "act_gender": "M"
 }
 
 ###
 GET http://localhost:9000/api/actor HTTP/1.1
+
+###
+GET http://localhost:9000/api/actor/11 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/actor/11 HTTP/1.1
+Content-Type: application/json
+
+{
+    "act_id": 11,
+    "act_fname": "Juanito",
+    "act_lname": "sanchez",
+    "act_gender": "M"
+}
+
+###
+DELETE http://localhost:9000/api/actor/11 HTTP/1.1
+
