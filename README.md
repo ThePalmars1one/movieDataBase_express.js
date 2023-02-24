@@ -31,7 +31,7 @@ Asegúrate de reemplazar tu-usuario, tu-contraseña, tu-cluster y tu-base-de-dat
 
 5. Inicia la aplicación:
 ```
-npm start
+npm run start
 ```
 6. Abre tu navegador y entra a http://localhost:9000 para acceder a la aplicación.
 
@@ -131,3 +131,9 @@ Content-Type: application/json
     "mov_rel_country": "USA"
 }
 ```
+
+# Documentación Endpoints
+
+Aquí podras encontrar la documentación generada en [Postman](https://documenter.getpostman.com/view/26022693/2s93CNMsZR "Postman") sobre los Endpoints utilizados en las siguients colecciones: Movies, Genres, Movie Genres, Reviewer y Rating, las cuales son replicadas en el resto de colecciones.
+
+En la documentación podrás encontrar el ejemplo de la request y adicionalmente la response recibida.
