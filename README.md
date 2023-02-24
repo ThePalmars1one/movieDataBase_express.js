@@ -108,3 +108,26 @@ GET http://localhost:9000/api/movies HTTP/1.1
 ###
 GET http://localhost:9000/api/movies/2 HTTP/1.1
 ```
+
+- DELETE: Borra una pelicula por su mov_id
+```
+###
+DELETE http://localhost:9000/api/movies/5 HTTP/1.1
+```
+
+- PUT: Actualiza una pelicula
+```
+###
+PUT http://localhost:9000/api/movies/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "mov_id": 2,
+    "mov_title": "Ant Man",
+    "mov_year": 2023,
+    "mov_time": 130,
+    "mov_lang": "ENG",
+    "mov_dt_rel": "16-02-2023",
+    "mov_rel_country": "USA"
+}
+```
